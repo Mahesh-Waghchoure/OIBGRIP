@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ATFG_Style.css">
+    <title>AnyTime Fitness Gym</title>
+</head>
+<body>   
+    
+    <header>
+        <nav class="navbar">
+            <img src="logo.jpg" alt="logo">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#section2">Services</a></li>
+                <li><a href="#contact">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="Home" #Home>
+        <div class="box">
+            <div class="sec1">
+                <h3>
+                    Anytime Fitness Gym
+                </h3>
+
+                <h4>Build your body & Transform yourself</h4>
+                
+                <p>Join us for</p>
+                <ul>
+                    <li>Body Building</li>
+                    <li>Fitness for all Sports</li>
+                    <li>Cross Fit</li>
+                    <li>Weight Gain</li>
+                    <li>Weight Loss</li>                   
+                    <li>Flexibility Training</li>
+                    <li>Kids Fitness</li>
+                </ul>
+
+                <button class="btn1">More Information</button>
+            </div>
+
+            <div class="sec2">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 4</div>
+                      <img src="Highlight.jpg" style="width:700px">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 4</div>
+                      <img src="Set_Up_1.jpg" style="width:700px">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 4</div>
+                      <img src="Set_Up_2.jpg" style="width:700px">
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">4 / 4</div>
+                      <img src="Set_Up_3.jpg" style="width:700px">
+                    </div>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span>
+                    </div>                  
+            </div>
+        </div>
+    </section>
+
+    <section class="section2" id="section2">
+        <h1 class="text-center my-2">Pricing</h1>
+        <p class="my-2">AnyTime Fitness Gym is always invites you for exercise in lowest price. 5 days free membership for every new member. Following are the some plans based on customer choice.
+            There are many plans available ex. 5000₹/Year with Champion-membership, 2000₹/ 6 month with pro-membership benefit and many ohter plans.
+            for more details please contact at <b>anytimefitnessgym@gmail.com</b>
+        </p>
+        <div class="boxes flex">
+            <div class="box3">
+                <h2>General</h2>
+                <ul>
+                    <li class="highlighted">₹200/month</li>
+                    <li>Modern Equipment</li>
+                    <li>No Treadmills</li>
+                    <li>No Trainer</li>
+                    <li>No Diet planner</li>
+                    <li><button class="btn3"><a href="#">Book Now</a></button></li>
+                </ul>
+            </div>
+            <div class="box3">
+                <h2>Pro</h2>
+                <ul>
+                    <li class="highlighted">₹400/month</li>
+                    <li>Modern Equipment</li>
+                    <li>Treadmills</li>
+                    <li>Specialized Gym Trainer</li>
+                    <li>No Martial Art Training</li>
+                    <li><button class="btn3" ><a href="#">Book Now</a></button></li>
+                </ul>
+            </div>
+            <div class="box3">
+                <h2>Champion</h2>
+                <ul>
+                    <li class="highlighted">₹600/month</li>
+                    <li>Modern Equipment</li>
+                    <li>Treadmills, Yoga</li>
+                    <li>Martial Art Training</li>
+                    <li>Diet planner</li>
+                    <li><button class="btn3" ><a href="#">Book Now</a></button></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="text-center my-2">For Inquiry</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address: </label>
+                    <input type="address" name="name" id="phone" placeholder="Enter your address" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender: </label>
+                    <select name="Gender" value="unchecked" required>
+                        <option> Male</option>
+                        <option> Female</option>
+                        <option> Other</option>
+                    </select>
+                </div>
+
+                <button class="btn2" style="float: left;" id="reset"><input type= "reset" value= "RESET"></button>
+                <button class="btn4" style="float: right;" a href="#">Submit</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+             Copyright &copy; <a href="#">AnyTimeFitness.com</a> | All right reserved. 2022-2023 <a href="#">Privacy</a> · <a href="#">Terms</a>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000); // Change image every 4 seconds
+        }
+        </script>
+        
+</body>
+</html>

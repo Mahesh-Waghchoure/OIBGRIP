@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+
+    <div class="box">
+        <form class="sec1">
+            <h3>
+                Temperature Converter
+            </h3>
+
+            <div class="input"> Enter Temperature: <input type="number" id="input-temp"></div><br>
+            <div class="unit">
+                <input type="radio" name="unit" value="fahrenheit" id="radio1" unchecked>Fahrenheit
+                <input type="radio" name="unit" value="celcius" id="radio2" unchecked>Celcius
+            </div><br>
+
+            <button class="btn1" type="button" onclick="convertTemp()">Convert</button>
+
+            <p id="result"></p>
+
+        </form><br>
+
+        
+
+        <div class="sec2">
+            <div class="image">
+                <img src="Thermometer.jpg">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Javasript -->
+    <script>
+        function convertTemp(){
+            var input = document.getElementById("input-temp").value;
+            var unit = document.querySelector('input[name = "unit"]:checked').value;
+
+            // check unit & convert according
+            if(unit == "fahrenheit"){
+                var celcius = (input - 32) * (5/9);
+                document.getElementById("result").innerHTML = input + "°F = " + celcius.toFixed(2) + "°C";
+            }
+
+            else if(unit == "celcius"){
+                var fahrenheit = (input * 9/5) + 32;
+                document.getElementById("result").innerHTML = input + "°C = " + fahrenheit.toFixed(2) + "°F";
+            }
+        }
+    </script>
+</body>
+
+</html>
